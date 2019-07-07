@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raúl C. Rivero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" id="intro">
+        <img class="avatar" src="assets/Promociona tu Negocio en el PKT Semanal +5353716520 (14).jpg" alt="Raúl C. Rivero">
+        <h1 class="name">Raúl C. Rivero</h1>
+        <h3 class="degree">Software Developer</h3>
+        <div class="navigation">
+            <a href="#" onclick="javascript:slide_left('resume')"> > </a>
+        </div>
+    </div>
+
+    <div class="container " id="resume">
+        <h1 class="name">About Me</h1>
+        <div class="about">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur! Eum corrupti suscipit error consequuntur necessitatibus accusamus libero voluptate animi aperiam totam architecto a, placeat odit fuga sapiente, cumque laboriosam.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur! Eum corrupti suscipit error consequuntur necessitatibus accusamus libero voluptate animi aperiam totam architecto a, placeat odit fuga sapiente, cumque laboriosam.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur! Eum corrupti suscipit error consequuntur necessitatibus accusamus libero voluptate animi aperiam totam architecto a, placeat odit fuga sapiente, cumque laboriosam.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur! Eum corrupti suscipit error consequuntur necessitatibus accusamus libero voluptate animi aperiam totam architecto a, placeat odit fuga sapiente, cumque laboriosam.</p>
+        </div>
+        <div class="navigation">
+            <a href="#" onclick="javascript:slide_right('resume')"> < </a>
+            <a href="#" onclick="javascript:slide_left('projects')"> > </a>
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h1 class="name" style="margin-top: 1em">Proyectos</h1>
+        <div class="projects-grid">
+            <div class="project">
+                <img class="project-img" src="assets/Promociona tu Negocio en el PKT Semanal +5353716520 (14).jpg" alt="">
+                <h2 class="name"> Hola Mundo <a href="#">>></a></h2>
+                <p class="tech"> Python, CSS, React, Django</p>
+            </div>
+            <div class="project">
+                <img class="project-img" src="assets/Promociona tu Negocio en el PKT Semanal +5353716520 (14).jpg" alt="">
+                <h2 class="name"> Hola Mundo <a href="#">>></a></h2>
+                <p class="tech"> Python, CSS, React, Django</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <a   href="#" onclick="javascript:slide_right('projects')"> < </a>
+            <a   href="#" onclick="javascript:slide_left('articles')"> > </a>
+        </div>
+    </div>
+
+    <div class="container" id="articles">
+        <h1 class="name" style="margin-top: 1em">Mis Artículos</h1>
+        <div class="projects-grid">
+            <div class="project">
+                <img class="project-img" src="assets/Promociona tu Negocio en el PKT Semanal +5353716520 (14).jpg" alt="">
+                <h2 class="name"> Hola Mundo <a href="#">>></a></h2>
+                <p class="tech"> Python, CSS, React, Django</p>
+            </div>
+            <div class="project">
+                <img class="project-img" src="assets/Promociona tu Negocio en el PKT Semanal +5353716520 (14).jpg" alt="">
+                <h2 class="name"> Hola Mundo <a href="#">>></a></h2>
+                <p class="tech"> Python, CSS, React, Django</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <a   href="#" onclick="javascript:slide_right('articles')"> < </a>
+        </div>
+    </div>
+
+    <script>
+        function slide_left(id){
+            var section = document.getElementById(id);
+            section.classList.add('slide');
+        }
+
+        function slide_right(id){
+            var section = document.getElementById(id);
+            section.classList.remove('slide');
+        }
+
+    </script>
+</body>
+</html>
