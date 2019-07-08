@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -103,4 +102,11 @@ body {
 
 .project:hover {
     background: rgba(252,176,69,.5);
+}
+
+@media only screen and (max-device-width: 824px) {
+    #resume .about .text {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
