@@ -5,14 +5,15 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
     align-items: center;
+    justify-content: flex-start
 }
 
 header {
-    z-index: 10000;
+    z-index: 1;
 }
 
 header .elastic-bar {
@@ -34,7 +35,6 @@ header .elastic-bar li a{
     color: inherit;
     font-family: Ubuntu;
     padding: .5em;
-    
 }
 
 header .elastic-bar > li:hover {
@@ -55,9 +55,11 @@ header .elastic-bar > li:hover {
 
 #intro {
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding-top: 3em;
 }
 
 #resume {
+    padding-top: 5em;
     background: rgba(252,176,69,1);
 }
 
@@ -67,7 +69,6 @@ header .elastic-bar > li:hover {
     background: rgba(255,255,255,.3);
     margin-left: 10em;
     margin-right: 10em;
-    margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 8px;
@@ -75,10 +76,12 @@ header .elastic-bar > li:hover {
 }
 
 #projects {
+    padding-top: 4em;
     background: rgba(255,29,29,1);
 }
 
 #articles {
+    padding-top: 4em;
 }
 
 .slide{
@@ -117,6 +120,7 @@ header .elastic-bar > li:hover {
 .project-img {
     border-radius: 8px;
     max-width: 400px;
+    width: 100%;
 }
 
 .project:hover {
